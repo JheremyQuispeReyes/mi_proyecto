@@ -9,20 +9,20 @@
 <body>
 
     <h1>💰minicompilador de solicitud crediticia </h1>
-    <div class= "descripcion">
-"Este sistema es un simulador que compila lexico, sintactico y semantico a una solicitud crediticia."
-    </div>
+    <p>Este sistema es un simulador que compila lexico sintactico y semantico<br>
+    a una solicitud crediticia.
+    </p>
     <div class="contenido">
     <!-- ===================IMPUT============ -->
-    <div class="columna-izquierda">
-     <form method="POST" enctype="multipart/form-data">
-      <div class="campo">
-       <label>	Cargar archivo .txt</label>
-       <input type="file" name="archivo" required>
-     </div>
-     <button>Compilar</button>
-   </form>
+    <form action="/formulario" method="post">
+        <label for="archivo">Colocar el archivo de texto</label>
+        <imput type="file" id="archivo"></imput>
+
+        <br>
+        <button type="submit">Tipo submit</button>
+    </form>
    <br>
+<!--Como se debe ver el archivo-->
    <strong>Formato esperado:</strong>
    <pre class="ejemplo-pre">
      "Numero de RUC: 20123456789
@@ -32,13 +32,8 @@
   </pre>
  </div>
 <!-- ==========ANALISIS ========= -->
- <div class="analisis-container">
+ 
    <h2> 🔎Análisis Léxico🔍</h2>
-   <!-- Vista inicial: mostrar tabla general de tokens -->
-
-   </div>
- </div>
-  <script> </script>
 </body>
 
 </html>
